@@ -33,7 +33,7 @@ services:
                - eureka-server        
         image: order-service:latest
         environment:
-           - SERVICE_HOSTNAME=13.38.112.16        
+           - SERVICE_HOSTNAME=13.38.119.160        
         deploy:
            replicas: 1        
         networks:
@@ -48,7 +48,7 @@ services:
                - eureka-server             
         image: product-service:latest
         environment:
-           - SERVICE_HOSTNAME=13.38.112.16         
+           - SERVICE_HOSTNAME=13.38.119.160         
         deploy:
            replicas: 2  
         networks:
@@ -63,7 +63,7 @@ services:
                - eureka-server             
         image: basket-service:latest
         environment:
-           - SERVICE_HOSTNAME=13.38.112.16         
+           - SERVICE_HOSTNAME=13.38.119.160         
         deploy:
            replicas: 1
         networks:
